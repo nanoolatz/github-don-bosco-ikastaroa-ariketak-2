@@ -1,10 +1,10 @@
 void setup() {
-  pinMode(LED_BUILTIN, INPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
 }
 
-void loop() {
-  digitalRead(LED_BUILTIN, LOW);
+void loop()
+  digitalWrite(LED_BUILTIN, LOW);
   sleep(1000);
-  digitalRead(LED_BUILTIN, HIGH);
+  digitalWrite(LED_BUILTIN, HIGH);
   sleep(2000);
 }
